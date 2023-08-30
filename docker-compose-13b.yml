@@ -1,5 +1,4 @@
 version: '3.6'
-name: llama-gpt-adrian
 
 services:
   llama-gpt-api-13b:
@@ -15,10 +14,7 @@ services:
       - IPC_LOCK
 
   llama-gpt-ui:
-    # image: 'ghcr.io/getumbrel/llama-gpt-ui:latest'
-    build:
-      context: ./ui
-      dockerfile: Dockerfile
+    image: 'ghcr.io/getumbrel/llama-gpt-ui:latest'
     ports:
       - 3131:3000
     restart: on-failure
