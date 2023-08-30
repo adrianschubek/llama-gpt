@@ -16,7 +16,7 @@ services:
   llama-gpt-ui:
     image: 'ghcr.io/getumbrel/llama-gpt-ui:latest'
     ports:
-      - 3000:3000
+      - 3131:3000
     restart: on-failure
     environment:
       - 'OPENAI_API_KEY=sk-XXXXXXXXXXXXXXXXXXXX'
